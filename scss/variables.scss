@@ -1,0 +1,39 @@
+//-------------
+//Functions
+//-------------
+@function breakpoint($name) {
+  @return map_get($breakpoints, $name);
+}
+//-------------
+//Colors
+//-------------
+$header-background-color: #f1f1f1;
+$header-background-color-mobile: #ffffff;
+$font-color: #101010;
+$ui-button-color: #ff574c;
+$ui-button-hover-color: #d34137;
+$ui-button-mobile-color: #2b8e53;
+$ui-button-font-color: #ffffff;
+$dropdown-hover-font-color: #2b8e53;
+$menu-hover-font-color: #2b8e53;
+$car-background-color: #2b8e53;
+$branches-background-color: #f1f1f1;
+$branches-button-background-color-active: #2b8e53;
+$branches-button-font-color-active: #ffffff;
+$branches-button-background-color: #ffffff;
+$branches-button-font-color: #101010;
+$swiper-pagination-curren-font-color: #ff574c;
+//-------------
+//Breakpoints
+//-------------
+$breakpoints: (
+        xs-start: 0px,
+        xs-end:   575px,
+        sm-start: 576px,
+        sm-end:   767px,
+        md-start: 768px,
+        md-end:   991px,
+        lg-start: 992px,
+        lg-end:   1199px,
+        xl-start: 1280px,
+);

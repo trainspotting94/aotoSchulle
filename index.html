@@ -2,9 +2,185 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+
+    <title>Автошкола «АДПО»</title>
+
+    <link rel="icon" href="./assets/images/logo.ico">
+
+    <link href="assets/fonts/Inter/inter.css" rel="stylesheet">
+
+    <link href="./assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/lib/Swiper/css/swiper-bundle.min.css"/>
+
+    <link href="scss/common.css" rel="stylesheet">
+    <link href="./scss/common-resize.css" rel="stylesheet">
 </head>
 <body>
-Hello world
+<div class="wrapper">
+    <header class="header">
+        <div class="header-title container-xxl">
+            <div class="header-title__mobile-container">
+                <div class="header-title__logo">
+                    <img src="./assets/images/logo.svg" alt="logo">
+                    <span>Автошкола<br> «АДПО»</span>
+                </div>
+                <div class="header-title__burger-menu">
+                    <img src="./assets/images/burger-menu.svg" alt="burger-menu">
+                </div>
+            </div>
+            <div class="header-title__info-container">
+                <div class="header-title__address">
+                    <img src="./assets/images/location.svg" alt="address">
+                    <span class="header-title__address-text">Выберите адрес</span>
+                    <img class="arrow-down" src="./assets/images/arrow-down.svg" alt="arrow-down">
+                    <div class="dropdown shadow p-3 mb-5 bg-white rounded">
+                        <span class="dropdown__item">Ул. Ушинского, 5–1</span>
+                        <span class="dropdown__item">Ул. Руднева, 22–1</span>
+                        <span class="dropdown__item">Ул. Бабушкина, 119</span>
+                        <span class="dropdown__item">Ул. Репищева, 14</span>
+                        <span class="dropdown__item">Пр. Солидарности, 11–1</span>
+                    </div>
+                </div>
+                <div class="header-title__email">
+                    <img src="./assets/images/email.svg" alt="email">
+                    <span>info@asp.ru</span>
+                </div>
+                <div class="header-title__phone">
+                    <img src="./assets/images/phone.svg" alt="phone">
+                    <span>(812) 999–99–99 </span>
+                    <span>(812) 111–11–11</span>
+                </div>
+                <button class="ui-button ui-button-header">
+                    <span>Заказать звонок</span>
+                    <img src="./assets/images/phone-mobile.svg" alt="phone">
+                </button>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul class="container-xxl">
+                <li class="menu__item">
+                    <a>
+                        Категории
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a>
+                        Филиалы
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a>
+                        Преподаватели
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a>
+                        Инструкторы
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a>
+                        Наш автопарк
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a>
+                        Наш автодром
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a>
+                        Отзывы
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a>
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="offer-structure-container">
+            <div class="offer-structure container-xxl">
+                <span class="offer-structure__header">
+                    Автошкола<br>
+                    в Санкт-Петербурге
+                </span>
+                <span class="offer-structure__text">
+                    Проходите обучение как вам удобно
+                    — в группе выходного дня, по вечерам или онлайн
+                </span>
+                <button class="ui-button">
+                    Записаться
+                </button>
+            </div>
+            <div class="car">
+                <img src="./assets/images/car.jpg" alt="car">
+                <div class="car__background"></div>
+            </div>
+        </div>
+        <div class="marquee">
+            <span class="marquee__text">
+                    СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ И АКЦИИ
+            </span>
+            <span class="marquee__text">
+                    СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ И АКЦИИ
+            </span>
+            <span class="marquee__text">
+                    СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+            </span>
+        </div>
+        <div class="branches ">
+            <div class="branches__title">
+                Наши филиалы
+            </div>
+            <div class="branches__buttons container-xxl">
+                <button class="classes classes_active">Учебные классы</button>
+                <button class="track">Автодром</button>
+            </div>
+            <div class="swiper swiper-address container-xxl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-classes">
+                        <img src="./assets/images/branches-location.svg" alt="location">
+                        Пр. Первый, 31–1
+                    </div>
+                    <div class="swiper-slide swiper-slide-classes">
+                        <img src="./assets/images/branches-location.svg" alt="location">
+                        Ул. Вторая, 5–1
+                    </div>
+                    <div class="swiper-slide swiper-slide-classes">
+                        <img src="./assets/images/branches-location.svg" alt="location">
+                        Пр. Третий, 11–1
+                    </div>
+                    <div class="swiper-slide swiper-slide-classes">
+                        <img src="./assets/images/branches-location.svg" alt="location">
+                        Ул. Четвертая, 22–1
+                    </div>
+                    <div class="swiper-slide swiper-slide-track">
+                        <img src="./assets/images/branches-location.svg" alt="location">
+                        Ул. Бабушкинского, д. 119
+                    </div>
+                    <div class="swiper-slide swiper-slide-track">
+                        <img src="./assets/images/branches-location.svg" alt="location">
+                        Ул. Репищева, д. 14
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</div>
+<script src="./assets/lib/JQuery/jquery-min.js"></script>
+<script src="./assets/lib/JQuery/jquery.marquee.min.js"></script>
+<script src="./assets/lib/Swiper/js/swiper-bundle.min.js"></script>
+<script src="./assets/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./js/common.js"></script>
 </body>
 </html>
